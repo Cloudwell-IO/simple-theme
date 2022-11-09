@@ -1,6 +1,6 @@
 {
   "name": "@cloudwell/simple-theme",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A theme provider that supports utilizing the system theme and a storage interface for allowing overrides.",
   "main": "index.js",
   "readme": "README.md",

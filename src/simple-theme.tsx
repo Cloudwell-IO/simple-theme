@@ -131,7 +131,7 @@ export function SimpleTheme(props: SimpleThemeProps) {
         }
     }, [props.manager])
 
-    const theme = managedTheme ?? (isDarkTheme ? "dark" : "light");
+    const theme = managedTheme && managedTheme.length > 0 ? managedTheme : (isDarkTheme ? "dark" : "light")
 
     return <ThemeManagerContext.Provider value={props.manager ? { getTheme: props.manager.getTheme, setTheme: onSetTheme } : null}>
         <ThemeContext.Provider value={theme}>
